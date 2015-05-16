@@ -1,0 +1,33 @@
+<% // create a list of javascript files to have the header load %>
+<% var js_include = ['create_lifting.js']; %>
+<% include header %>
+
+<!-- Note that this is a post -->
+<form id="create_lifting_form" action="<%= action %>">
+    <label for="personid">People</label>
+    <select id="personid" name="personid">
+        <option value=""><!-- intentionally left blank --></option>
+        <% for (var i=0; rs.length > i; i++) { %>
+        <option value="<%= rs[i].ID %>">
+            <%= rs[i].FirstAndLastName %>
+        </option>
+        <% } %>
+    </select>
+    <table id="login">
+        <tr><td>Exercise:</td>
+            <td><input type="text" id="Exercise" name="Exercise" /></td>
+        </tr>
+        <tr><td>Time (minutes):</td>
+            <td><input type="text" id="Time" name="Time" /></td>
+        </tr>
+        <tr><td>Day (mm/dd/yyyy):</td>
+            <td><input type="text" id="Day" name="Day"></td>
+        </tr>
+    </table>
+    <!-- not that we use a button here and not submit -->
+    <input type="button" id="createLiftingBtn" value="Create" />
+</form>
+
+<div id="output" style="margin:10px;display:none"></div>
+
+<% include footer %>
