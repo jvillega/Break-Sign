@@ -1,14 +1,12 @@
 {
-  "name": "lab18",
+  "name": "Break Sign",
   "version": "0.0.0",
-  "description": "CS355 Lab 18 Example",
+  "description": "Simple Node app to be used as a break sign",
   "main": "app.js",
   "dependencies": {
     "body-parser": "~1.9.2",
     "connect": "~3.3.3",
-    "express": "~4.10.2",
-    "ejs": "~1.0.0",
-    "mysql": "~2.5.3"
+    "express": "~4.10.2"
   },
   "devDependencies": {},
   "scripts": {
