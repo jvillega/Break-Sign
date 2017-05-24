@@ -1,11 +1,18 @@
-table.login {
-    border:none;
+body {
+    background-color: #404040;
 }
 
-footer {
-    margin-top:20px;
+button {
+    float: center;
+    background-color: #0077b7;
+    bordewr: #0077b7;
+    width: 100%;
+    max-width: 120px;
+    height: 2em;
+    margin: 2px;
 }
 
-header {
-    margin-bottom:20px;
+h1 {
+    color: #0077b7;
+    display: inline;
 }
