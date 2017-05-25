@@ -1,5 +1,5 @@
 # Break-Sign
-Simple Node app to be used as a break sign. You must hit clear before selecting a new time.
+Simple Node app to be used as a break sign.
 
 Current Versions of:
   Node v7.9.0,
