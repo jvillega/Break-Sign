@@ -1,18 +1,19 @@
 var output = document.getElementById('output');
 var type = document.getElementById('type');
 var late = document.getElementById('late');
+var myInterval = null;
 
 function countdownCall(num) {
     breakType(num); // call to display what type of break
-
+    clearInterval(myInterval);
     var sixty = 0;
-    var myInterval = setInterval(function() {
+    myInterval = setInterval(function() {
 	countdownReturn = countdown(num, sixty);
 	sixty -= 1;
 	if (countdownReturn) {
 	    num -= 1;
 	    sixty = 59;
-	    if (num==-1) {
+	    if (num == -1) {
 		displayLateMessage();
 		clearInterval(myInterval);
 	    }
