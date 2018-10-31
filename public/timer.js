@@ -25,13 +25,14 @@ function countdownCall(num) {
 	        displayLateMessage();
 	        clearInterval(myInterval);
 	    }
-	  
+
     }, 1000);
     back.style.display="block";
 }
 
 
 function displayBreakTimer(num, seconds) {
+    document.getElementById('clear').style.visibility = 'visible';
     if (seconds<10) {
 	    output.innerHTML =  "I'll be back in approximately " + num + ":0" + seconds + " minutes";
     }
