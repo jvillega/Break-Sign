@@ -1,17 +1,19 @@
 {
-  "name": "Break Sign",
-  "version": "0.0.0",
-  "description": "Simple Node app to be used as a break sign",
-  "main": "app.js",
-  "dependencies": {
-    "body-parser": "~1.9.2",
-    "connect": "^3.6.6",
-    "express": "^4.16.4"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "Break Sign",
+    "version": "1.0.0",
+    "description": "Simple Node app to be used as a break sign",
+    "main": "app.js",
+    "dependencies": {
+	"body-parser": "~1.9.2",
+	"connect": "^3.6.6",
+	"express": "^4.16.4"
+    },
+    "devDependencies": {
+	"negotiator": ">=0.6.1"
+    },
+    "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
 }
