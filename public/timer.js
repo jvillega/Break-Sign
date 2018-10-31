@@ -9,15 +9,19 @@ function countdownCall(num) {
     breakType(num);
     clearInterval(myInterval);
     clearInterval(lateInterval);
+
     var seconds = 0;
+
     myInterval = setInterval(function() {
         displayBreakTimer(num, seconds);
         seconds -= 1;
+
         if (seconds == -1) {
             seconds = 59;
 	        num -= 1;
 	    }
-	    if (num == -1) {
+
+      if (num == -1) {
 	        displayLateMessage();
 	        clearInterval(myInterval);
 	    }
@@ -59,7 +63,7 @@ function displayLateTimer(minutes, seconds) {
 		output.innerHTML =  "I'm sorry but I'm currently running " + minutes + ":" + seconds + " late!";
     }
 }
-    
+
 
 function breakType(num) {
     if (num>10) {
