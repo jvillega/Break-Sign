@@ -17,6 +17,11 @@ app.get('/', function(req, res){
     res.sendFile('index.html', {root: '.'});
 });
 
+app.get('/about', function(req, res){
+    res.sendFile('about.html', {root: '.'});
+});
+
+// Code block to test if running on heroku
 let port=process.env.PORT;
 if (port==undefined || port =="") {
   port=3000;
