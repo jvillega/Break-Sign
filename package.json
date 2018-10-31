@@ -5,8 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "body-parser": "~1.9.2",
-    "connect": "~3.3.3",
-    "express": "~4.10.2"
+    "connect": "^3.6.6",
+    "express": "^4.16.4"
   },
   "devDependencies": {},
   "scripts": {
