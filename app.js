@@ -17,6 +17,15 @@ app.get('/', function(req, res){
     res.sendFile('index.html', {root: '.'});
 });
 
+let port=process.env.PORT;
+if (port==undefined || port =="") {
+  port=3000;
+}
+console.log("Express server listening on port", port);
+app.listen(port);
+
+/* ORGINAL
 app.set('port', 3000);  //use your own port
 app.listen(app.get('port'));
 console.log("Express server listening on port", app.get('port'));
+*/

@@ -12,6 +12,16 @@ button {
     margin: 2px;
 }
 
+.back {
+    float: center;
+    background-color: red;
+    bordewr: #0077b7;
+    width: 100%;
+    max-width: 150px;
+    height: 3em;
+    margin: 2px;
+}
+
 h1 {
     color: #0077b7;
     display: inline;
