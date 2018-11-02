@@ -1,14 +1,14 @@
 // import libraries
-var express = require('express'),
-    bodyParser = require('body-parser');
+var express = require('express'); //,
+    //bodyParser = require('body-parser');
 
 var app = express();
 
 // allow json data to be parsed
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({
+//    extended: true
+//}));
 
 // cofigure static directory for js, css, etc.
 app.use(express.static('./public'));
